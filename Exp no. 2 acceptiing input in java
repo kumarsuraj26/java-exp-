@@ -1,0 +1,86 @@
+/*1. Make a class using console that reads the name of the user and prints it.
+
+Source Code:*/
+
+
+import java.io.*;
+ class Main
+ {
+ public static void main(String[] args)
+  {
+    Console con = System.console();
+    System.out.println("What is your name: ");
+    String str = con.readLine();
+    System.out.println("Welcome "+str+" to java world");
+  }
+}
+
+
+
+/*2.we obtain the instance of the Console class that reads a password but when we type the password it is shown blank but in the output it shows our password.
+Source Code:*/
+
+import java.io.*;
+
+class Main
+{ 
+public static void main(String[] args)
+   {
+   Console con = System.console();
+   System.out.println("enter password: ");
+   char[] chr = con.readPassword();
+   System.out.println("Now your password is ");
+   for(char ch1:chr)
+       {   
+ 	     System.out.print(ch1);
+       }
+   }
+}
+
+
+/*3.In this example, we are using both classes, used for getting data line by line.
+
+
+Source Code:*/
+
+import java.io.*;
+
+
+class Main
+{
+public static void main(String[] args) throws Exception
+    	{
+        		InputStreamReader inpred = new InputStreamReader(System.in);
+        		BufferedReader bffr = new BufferedReader(inpred);
+        		System.out.println("What is your name");
+        		String name = bffr.readLine();
+        		System.out.println("Welcome "+name+" to java world");
+    	}
+}
+
+
+/*
+4.Demonstrate program for scanner. 
+
+Source Code:*/
+
+
+import java.util.Scanner;
+
+class Main
+{
+    	public static void main(String[] args)
+    	{
+        		Scanner scanner = new Scanner(System.in);
+        		System.out.println("what is your roll no: ");
+        		int rollnum = scanner.nextInt();
+        		System.out.println("what's your name: ");
+        		String sname = scanner.next();
+        		System.out.println("your roll no.: "+rollnum+"\n name: "+sname);
+    	}
+}
+
+
+
+
+
