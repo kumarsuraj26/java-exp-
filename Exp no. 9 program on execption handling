@@ -1,0 +1,27 @@
+Source Code:
+public class JavaExceptionExample {
+{ {
+
+Date of Performance:
+Date of Submission:
+
+Aim:Program on Exception handling
+Theory: What is Exception Handling?
+Exception Handling is amechanism to handle runtime errors such as ClassNotFoundException,
+IOException, SQLException, RemoteException, etc.
+
+to maintain the normal flow of the application
+
+public static void main(String args[])
+try
+//code that may raise exception
+int data=100/0;
+}
+catch(ArithmeticException e)
+{
+System.out.println(e);
+}
+//rest code of the program
+System.out.println("rest of the code...");
+}
+}
